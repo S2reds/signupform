@@ -16,14 +16,29 @@ body {
 
 #main {
     display: flex;
-    width: 50vw;
+    width: 45vw;
     background-color:slategrey ;
     gap: 30px;
     border-radius: 10px;
+    position: relative;
 }
 
-img {
+#logo {
+    position: absolute;
+    background-color: black;
+    width: 500px;
+    opacity: .4;
+    top: 150px;
+}
+
+#logo img {
+    height: 220px;
+    margin-left: 30%;
+}
+
+#main img {
     border-radius: 10px;
+    filter: drop-shadow(3px 0px 3px black);
 }
 
 #form > label {
@@ -54,11 +69,14 @@ form {
 #form > h1 {
     position: absolute;
     font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .contain > label {
     display: block;
 }
+
+
 
 #info pre {
     font-size: 18px;
@@ -80,6 +98,11 @@ form {
     background-color: rgb(19, 65, 19);
 }
 
+#formfoot button:hover {
+    color: #134113;
+    background-color: #e0e0e0;
+}
+
 .contain input {
     padding: 5px;
     background-color:rgb(206, 206, 206);
@@ -98,3 +121,7 @@ a {
     color: rgb(19, 65, 19);
 }
 
+.contain input:focus {
+    background-color:rgb(19, 65, 19);
+    filter: drop-shadow(2px 2px 5px black)
+}

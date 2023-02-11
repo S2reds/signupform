@@ -10,6 +10,9 @@
 <body>
     <div id="main">
         <img src="seoul.jpg" width="500">
+        <div id="logo">
+            <img src="odin.png" alt="TOP logo">
+        </div>
         <form action="" method="post">
             <div id="info">
                 <pre>This is a mock service, please disregard. 
@@ -49,14 +52,14 @@
                     <label for="pass">
                         PASSWORD
                     </label>
-                    <input type="password" id="pass" required min="5" max="12">
+                    <input type="password" id="pass" class='error' required min="5" max="12">
                 </div>
 
                 <div class="contain">
                     <label for="repass">
                         CONFIRM PASSWORD
                     </label>
-                    <input type="password" id="repass" required min="5" max="12">
+                    <input type="password" id="repass" class="error" required min="5" max="12">
                 </div>
             </div>
             <div id="formfoot">
