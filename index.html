@@ -8,6 +8,64 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-    
+    <div id="main">
+        <img src="seoul.jpg" width="500">
+        <form action="" method="post">
+            <div id="info">
+                <pre>This is a mock service, please disregard. 
+    Unless you want to signup, then go for it.</pre>
+            </div>
+            <div id="form">
+                <h1>Make your dreams come true!</h1>
+                <div class="contain">
+                    <label for="fname">
+                        FIRST NAME
+                    </label>
+                    <input type="text" id="fname" minlength="3" maxlength="12" required>
+                </div>
+
+                <div class="contain">
+                    <label for="lname">
+                        LAST NAME
+                    </label>
+                    <input type="text" id="lname" minlength="3" maxlength="12" required>
+                </div>
+
+                <div class="contain">
+                    <label for="email">
+                        EMAIL
+                    </label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="contain">
+                    <label for="phone">
+                        PHONE NUMBER
+                    </label>
+                    <input type="number" id="phone" required>
+                </div>
+
+                <div class="contain">
+                    <label for="pass">
+                        PASSWORD
+                    </label>
+                    <input type="password" id="pass" required min="5" max="12">
+                </div>
+
+                <div class="contain">
+                    <label for="repass">
+                        CONFIRM PASSWORD
+                    </label>
+                    <input type="password" id="repass" required min="5" max="12">
+                </div>
+            </div>
+            <div id="formfoot">
+                <label for="submit">
+                </label>
+                <button type="submit" id="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
